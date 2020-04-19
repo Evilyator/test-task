@@ -1,0 +1,12 @@
+extends ../layout/summary
+
+append config
+  - var title = "Summary"
+  - var metaDesc = "Page description"
+
+block content
+  .container
+    h2 Pages
+    ul
+      li: a(href="./auth-page.html") Login page
+      li: a(href="./tasks-page.html") Tasks page

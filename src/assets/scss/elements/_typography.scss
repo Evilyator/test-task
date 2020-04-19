@@ -1,0 +1,80 @@
+// Fonts sizes
+
+@for $i from 1 through 5 {
+  h#{$i} {
+    color: inherit;
+    font-weight: $font-weight-base;
+    margin: 0 0 .5em;
+    &:empty {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    a {
+      color: inherit;
+    }
+  }
+}
+
+//----------------------------------------
+//   Links
+//----------------------------------------
+
+a {
+  text-decoration: none;
+  color: $clr-primary;
+  transition: color .3s ease;
+  &:active,
+  &:hover,
+  &:focus {
+    color: darken($clr-primary, 20%);
+  }
+}
+
+$tags-list: _assign((
+  'p', 'ul', 'ol', 'li', 'a', 'blockquote', 'address', 'table'),
+  'empty');
+
+#{$tags-list} {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: $font-size-xxl;
+}
+
+h2 {
+  font-size: $font-size-xl;
+}
+
+h3 {
+  font-size: $font-size-l;
+}
+
+h4 {
+  font-size: $font-size-m;
+}
+
+h5 {
+  font-size: $font-size-s;
+}
+
+h6 {
+  font-size: $font-size-xs;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+ul:not([class]) {
+  list-style: disc outside;
+}
+
+table {
+  margin-bottom: map-get($spacers, 4);
+}
+
+td {
+  padding: map-get($spacers, 2);
+}

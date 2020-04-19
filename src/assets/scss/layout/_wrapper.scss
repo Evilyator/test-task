@@ -1,0 +1,9 @@
+//----------------------------------------
+//   Layout : Wrapper
+//----------------------------------------
+
+.container {
+  padding-right: $gutter-width;
+  padding-left: $gutter-width;
+  max-width: $wrap-max-width;
+}

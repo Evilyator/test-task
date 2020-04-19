@@ -1,0 +1,31 @@
+.auth-page {
+	height: 100vh;
+	overflow: auto;
+	padding: 15px 0;
+}
+
+.auth-box {
+	background: $clr-white;
+	width: 100%;
+	max-width: 446px;
+	border: 1px solid $clr-secondary;
+	border-radius: $rad-base;
+	overflow: hidden;
+	&__header {
+		background-color: #f2f5fc;
+		padding: 37px 39px 19px;
+		text-align: center;
+	}
+	&__logo {
+		&:not(:last-child) {
+			margin-bottom: 21px;
+		}
+	}
+	&__body {
+		padding: 34px 39px;
+	}
+	&__footer {
+		text-align: center;
+		padding: 26px 39px 36px;
+	}
+}

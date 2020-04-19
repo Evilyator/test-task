@@ -1,0 +1,26 @@
+# Mac OSX
+.DS_Store
+
+# IDE
+.idea
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# Npm & yarn
+/npm-debug.log
+node_modules
+yarn-error.log
+
+# Generated folder
+temp
+
+# Generated fonts
+src/assets/fonts/app-font.eot
+src/assets/fonts/app-font.svg
+src/assets/fonts/app-font.ttf
+src/assets/fonts/app-font.woff
+src/assets/fonts/app-font.woff2
+
+# Generated files
+src/assets/scss/components/_icons.scss

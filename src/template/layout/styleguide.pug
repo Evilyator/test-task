@@ -1,0 +1,24 @@
+include ../config
+block config
+include ../mixins/mixins
+
+doctype
+html(lang= lang)
+  head
+    include ../partials/head
+    link(rel='stylesheet', href= path + 'assets/css/styleguide.css')
+
+  body
+    .sg-page
+      header
+        .sg-title Styleguide
+        a.sg-linkBack(href="../") Return summary
+        nav
+          p Components
+          a(href="#button") Buttons
+          a(href="#form") Form
+          a(href="#content") Content
+      main
+        block content
+
+      script(src= path + "assets/js/main.js", async)

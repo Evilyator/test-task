@@ -1,0 +1,138 @@
+extends ../layout/base
+
+block content
+  .container
+    .tasks-page.d-flex.flex-column
+      h1 Tasks
+      .tasks-content.d-md-flex.justify-content-between
+        .tasks-box.mb-5.mb-md-0
+          .tasks-box__header
+            button.btn.btn--primary.btn--icon
+              i.icon-plus
+              | New Task
+          .tasks-box__body
+            .tasks-list
+              .tasks-list__holder.collapse-trigger
+                i.icon-chevron
+                img(src='./assets/img/img02.jpg' alt='profile image').tasks-list__img
+                strong Varian Wrynn
+              .collapse-drop
+                .tasks-item
+                  .tasks-item__check
+                    i.icon-check-round
+                  .tasks-item__row
+                    span(title='Prepare graphics for presentation').tasks-item__text Prepare graphics for presentation
+                    .tasks-item__stat
+                      span.tasks-item__date 30 Jun
+                      i.icon-play
+                .tasks-item
+                  .tasks-item__check
+                    i.icon-check-round
+                  .tasks-item__row
+                    span(title='Make a graphic presentation of a...').tasks-item__text Make a graphic presentation of a...
+                    .tasks-item__stat
+                      i.icon-play
+                .tasks-item.tasks-item--active
+                  .tasks-item__check
+                    i.icon-check-round
+                  .tasks-item__row
+                    span(title='Develop new marketing campaign for summer period').tasks-item__text Develop new marketing campaign for summer period
+                    .tasks-item__stat
+                      span.tasks-item__date 20 Jun
+                      i.icon-play
+                .tasks-item
+                  .tasks-item__check
+                    i.icon-check-round
+                  .tasks-item__row
+                    span(title='Develop new marketing campaign for summer and autumn period').tasks-item__text Develop new marketing campaign for summer and autumn period
+                    .tasks-item__stat
+                      i.icon-play
+                .tasks-item
+                  .tasks-item__check
+                    i.icon-check-round
+                  .tasks-item__row
+                    span(title='Divide project development for subtasks and assign to team members').tasks-item__text Divide project development for subtasks and assign to team members
+                    .tasks-item__stat
+                      span.tasks-item__date 28 Jun
+                      i.icon-play
+            .tasks-list
+              .tasks-list__holder.collapse-trigger
+                i.icon-chevron
+                img(src='./assets/img/img03.jpg' alt='profile image').tasks-list__img
+                strong Tyrande Whisperwind
+              .collapse-drop
+                .tasks-item
+                  .tasks-item__check
+                    i.icon-check-round
+                  .tasks-item__row
+                    span(title='Make a graphic presentation of a...').tasks-item__text Make a graphic presentation of a...
+                    .tasks-item__stat
+                      span.tasks-item__date 24 Jun
+                      i.icon-play
+                .tasks-item
+                  .tasks-item__check
+                    i.icon-check-round
+                  .tasks-item__row
+                    span(title='Develop new marketing campaign for summer and autumn period').tasks-item__text Develop new marketing campaign for summer and autumn period
+                    .tasks-item__stat
+                      span.tasks-item__date 28 Jun
+                      i.icon-play
+                .tasks-item
+                  .tasks-item__check
+                    i.icon-check-round
+                  .tasks-item__row
+                    span(title='Develop new marketing campaign for summer period').tasks-item__text Develop new marketing campaign for summer period
+                    .tasks-item__stat
+                      i.icon-play
+                .tasks-item
+                  .tasks-item__check
+                    i.icon-check-round
+                  .tasks-item__row
+                    span(title='Develop new marketing campaign for summer and ...').tasks-item__text Develop new marketing campaign for summer and ...
+                    .tasks-item__stat
+                      span.tasks-item__date 20 Jun
+                      i.icon-play
+        .tasks-box
+          .tasks-box__body.tasks-box__body--preview
+            .d-flex.justify-content-between.mb-6
+              div
+                button.btn.btn--play.mr-4
+                  i.icon-play
+                span.btn.btn--secondary.btn--icon
+                  i.icon-check
+                  | Mark Complete
+              a(href='#').more-options
+                i.icon-dots
+            h2.mb-5 Develop new marketing campaign for summer period
+            .tasks-box__row
+              .row
+                .col-12.col-lg-4
+                  .d-flex.align-items-center.mb-3.mb-lg-0
+                    .d-flex.align-items-center
+                      img(src='./assets/img/img04.jpg' alt='profile image').mr-3
+                      span Cosmic Cuttlefish
+                .col-12.col-lg-4
+                  .d-flex.align-items-center.mb-3.mb-lg-0
+                    img(src='./assets/img/img03.jpg' alt='profile image').mr-3
+                    span Tyrande Whisperwind
+                .col-12.col-lg-4
+                  .d-flex.align-items-center
+                    span.tasks-item__date.tasks-item__date--preview 29 Jun
+            .tasks-box__row
+              |If this represents the “best” of the person in doing a task or if it
+              |  represents “how” they do a task in an area such as performance/pace,
+              |  this would be included in the profile.
+            .tasks-box__row
+              span.tasks-box__subhead Budget
+              span 120 hours
+            .tasks-box__row
+              span.badge AnotherOne
+                i.icon-cross.close
+              span.badge Somedata
+                i.icon-cross.close
+              a(href='#').text-light.ml-5
+                i.icon-label.mr-2
+                |Add Tags
+            .tasks-box__row
+              span.tasks-box__subhead Activity
+              strong.text-light You created this task 20 Jun at 7 h 23 min

@@ -1,0 +1,28 @@
+extends ../layout/base
+
+block content
+  .container
+    .auth-page.d-flex.justify-content-center.align-items-center
+      .auth-box
+        .auth-box__header
+          img(src='./assets/img/logo.svg' alt='TMetric').auth-box__logo
+          h1.m-0 Log Into TMetric
+        .auth-box__body
+          form.form
+            .form-group
+              label.form-group-input
+                span.form-group-label Email address
+                input(type='text')
+            .form-group
+              label.form-group-input
+                span.form-group-label Password
+                input(type='password')
+              .mx-2.mt-4.mb-6
+                a(href='#') Forgot password?
+            .form-group
+              button.btn.btn--primary.w-100 Log In
+            .form-group
+              button.btn.btn--outline-secondary.w-100
+                img(src='./assets/img/img01.svg' alt='Sign in with Google')
+        .auth-box__footer
+          a(href='#') Sign Up

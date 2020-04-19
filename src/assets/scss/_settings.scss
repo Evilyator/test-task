@@ -1,0 +1,95 @@
+//----------------------------------------
+//   Variables
+//----------------------------------------
+
+// 1 - Color
+// 2 - Font
+// 3 - Grid and wrapper
+// 4 - Radius
+// 5 - Forms
+// 6 - Spacing
+// 7 - Breakpoints
+
+//
+// 1 - Color
+// ---------------------------------------
+
+@import "variables/color";
+
+//
+// 2 - Font
+// ---------------------------------------
+
+@import "variables/typography";
+
+//
+// 3 - Grid and wrapper
+// ---------------------------------------
+
+$app-min-width: 320px;
+$wrap-max-width: 1430px;
+$gutter-width: 15px;
+
+//
+// 4 - Radius
+// ---------------------------------------
+
+$rad-s: 3px;
+$rad-base: 6px;
+
+//
+// 5 - Forms
+// ---------------------------------------
+
+$form-group-input-height: 36px;
+
+$form-list-input: _assign((
+  '[type="text"]',
+  '[type="password"]',
+  '[type="tel"]',
+  '[type="url"]',
+  '[type="email"]',
+  '[type="search"]',
+  '[type="date"]',
+  '[type="month"]',
+  '[type="number"]'
+));
+
+//
+// 6 - Spacing
+// ---------------------------------------
+
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 2),
+  6: ($spacer * 2.5),
+  7: ($spacer * 3),
+  8: ($spacer * 3.5),
+  9: ($spacer * 4)
+);
+
+//
+// 7 - Breakpoints
+// ---------------------------------------
+
+$breakpoints: (
+  'xs': 0,
+  'sm': 414px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1200px
+);
+
+$grid-breakpoints: (
+  'xs': map-get($breakpoints, 'xs'),
+  'sm': map-get($breakpoints, 'sm'),
+  'md': map-get($breakpoints, 'md'),
+  'lg': map-get($breakpoints, 'lg'),
+  'xl': map-get($breakpoints, 'xl')
+);

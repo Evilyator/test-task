@@ -1,0 +1,47 @@
+@charset 'UTF-8';
+
+@import "tools/_function";
+@import "tools/_mixin";
+@import "_settings";
+
+// =======================================
+// NPM externals
+// =======================================
+
+@import "node_modules/include-media/dist/include-media";
+@import "node_modules/bootstrap-4-grid/scss/grid";
+
+// =======================================
+// Base
+// =======================================
+
+@import "base/_normalize";
+@import "base/_fonts";
+@import "base/_common";
+
+// =======================================
+// Elements
+// =======================================
+
+@import "elements/_button";
+@import "elements/_form";
+@import "elements/_typography";
+
+// =======================================
+// Components
+// =======================================
+
+@import "components/_scrollbar";
+
+// =======================================
+// Layout
+// =======================================
+
+@import "layout/_wrapper";
+
+// =======================================
+// Pages
+// =======================================
+
+@import "pages/_auth-page";
+@import "pages/_tasks-page";
