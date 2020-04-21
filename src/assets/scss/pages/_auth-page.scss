@@ -11,21 +11,25 @@
 	border: 1px solid $clr-secondary;
 	border-radius: $rad-base;
 	overflow: hidden;
-	&__header {
-		background-color: #f2f5fc;
-		padding: 37px 39px 19px;
-		text-align: center;
+}
+
+.auth-box__header {
+	background-color: #f2f5fc;
+	padding: 37px 39px 19px;
+	text-align: center;
+}
+
+.auth-box__logo {
+	&:not(:last-child) {
+		margin-bottom: 21px;
 	}
-	&__logo {
-		&:not(:last-child) {
-			margin-bottom: 21px;
-		}
-	}
-	&__body {
-		padding: 34px 39px;
-	}
-	&__footer {
-		text-align: center;
-		padding: 26px 39px 36px;
-	}
+}
+
+.auth-box__body {
+	padding: 34px 39px;
+}
+
+.auth-box__footer {
+	text-align: center;
+	padding: 26px 39px 36px;
 }
