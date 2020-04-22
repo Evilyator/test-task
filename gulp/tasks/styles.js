@@ -29,7 +29,7 @@ gulp.task("styles", () => {
         },
       })
     )
-    .pipe(autoprefixer({ browsers: ["last 2 versions"] }))
+    .pipe(autoprefixer())
     .pipe(!options.production ? sourcemaps.write(".") : gutil.noop())
     .pipe(options.production ? csso() : gutil.noop())
     .pipe(size({ title: "style" }))
