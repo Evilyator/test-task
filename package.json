@@ -43,7 +43,7 @@
     "gulp-util": "^3.0.7",
     "gulp-wait": "^0.0.2",
     "gulp-watch": "^4.3.10",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.6",
     "plumber": "^0.4.8",
     "require-dir": "^0.3.0",
     "run-sequence": "^2.2.0",
